@@ -23,6 +23,10 @@
         "scope": "global",
         "val": "-L#{@esy-ocaml/libffi.lib} -lffi"
       },
+      "LD_LIBRARY_PATH": {
+         "scope": "global",
+         "val": "#{self.lib}:$LD_LIBRARY_PATH"
+      },
       "LIBRARY_PATH": {
         "scope": "global",
         "val": "#{@esy-ocaml/libffi.lib : $LIBRARY_PATH}"
